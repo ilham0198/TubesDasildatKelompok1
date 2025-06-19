@@ -1,14 +1,9 @@
-python-3.12
 streamlit
 joblib
 numpy
-tensorflow>=2.11,<2.16
-p_utils
-p_utils
-p_utils
+tensorflow
 keras
 p_utils
-keras
 pandas
 pickle-mixin
 matplotlib

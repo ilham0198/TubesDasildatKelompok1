@@ -86,12 +86,12 @@ def clean_text(text):
 # In production, load the tokenizer from file (joblib/pickle/json)
 tokenizer = keras.preprocessing.text.Tokenizer(num_words=5000, oov_token='<OOV>')
 
-st.title('IMDB Movie Review Sentiment & Regression Dashboard')
+st.title('Movie Review Sentiment Analysis Dashboard')
 
 menu = st.sidebar.radio('Choose Task:', ['Classification', 'Regression'])
 
 if menu == 'Classification':
-    st.header('Sentiment Analysis (Classification)')
+    st.header('Classification')
     text = st.text_area('Enter a movie review:')
     model_type = st.selectbox('Choose Model:', ['Decision Tree', 'Neural Network'])
     if st.button('Predict Sentiment'):
@@ -153,7 +153,7 @@ if menu == 'Classification':
                 csv = df.to_csv(index=False).encode('utf-8')
                 st.download_button('Download Results as CSV', csv, 'sentiment_results.csv', 'text/csv')
 elif menu == 'Regression':
-    st.header('Review Score Prediction (Regression)')
+    st.header('Regression')
     text = st.text_area('Enter a movie review:')
     if st.button('Predict Score'):
         if not text.strip():

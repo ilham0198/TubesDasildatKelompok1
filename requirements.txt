@@ -1,0 +1,16 @@
+streamlit
+joblib
+numpy
+tensorflow
+p_utils
+p_utils
+p_utils
+keras
+p_utils
+keras
+pandas
+pickle-mixin
+matplotlib
+seaborn
+nltk
+scikit-learn

@@ -3,6 +3,3 @@ tensorflow
 joblib
 numpy
 matplotlib
-pandas
-seaborn
-sklearn

@@ -3,3 +3,7 @@ tensorflow
 joblib
 numpy
 matplotlib
+seaborn
+pandas
+pickle-mixin
+nltk
